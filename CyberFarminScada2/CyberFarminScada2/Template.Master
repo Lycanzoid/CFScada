@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Template.master.cs" Inherits="CyberFarminScada2.Template" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>CyberFarming</title>
+    <link href="../Content/Site.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body id="home">
+    <form id="form1" runat="server">
+        <div class="wrapper">
+     
+        <header>
+            <h1 class="logo"><a href="#">Cyber Farming</a></h1>
+            <a class="to_nav" href="#primary_nav">Menu</a>
+        </header>
+            <div id="middler">
+         <asp:ContentPlaceHolder id="CPH1" runat="server">
+         
+         </asp:ContentPlaceHolder>
+                
+        </div>
+         
+        <footer>
+         
+            <p>All Rights Reserved CyberFarming</p>
+         
+        </footer>
+
+     
+    </div><!--end wrapper-->
+        <nav id="primary_nav">
+ 
+    <ul>
+     
+        <li><a href="Home.aspx">Home</a></li>
+     
+        <li><a href="About.aspx">About CyberFarming</a></li>
+     
+        <li><a href="Logon.aspx">Log In</a></li>
+        <li><a href="scadaOverview.aspx">SCADA</a></li>
+     
+    </ul>
+ 
+</nav>
+    </form>
+</body>
+</html>

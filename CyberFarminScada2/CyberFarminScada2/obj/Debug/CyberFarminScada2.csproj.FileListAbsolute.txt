@@ -1,0 +1,10 @@
+c:\users\andreas\documents\visual studio 2012\Projects\CyberFarminScada2\CyberFarminScada2\bin\CyberFarminScada2.dll
+c:\users\andreas\documents\visual studio 2012\Projects\CyberFarminScada2\CyberFarminScada2\bin\CyberFarminScada2.pdb
+c:\users\andreas\documents\visual studio 2012\Projects\CyberFarminScada2\CyberFarminScada2\obj\Debug\CyberFarminScada2.dll
+c:\users\andreas\documents\visual studio 2012\Projects\CyberFarminScada2\CyberFarminScada2\obj\Debug\CyberFarminScada2.pdb
+c:\users\andreas\documents\visual studio 2012\Projects\CyberFarminScada2\CyberFarminScada2\obj\Debug\CyberFarminScada2.csprojResolveAssemblyReference.cache
+c:\users\andreas\documents\visual studio 2012\Projects\CyberFarminScada2\CyberFarminScada2\bin\DotNet.Highcharts.dll
+c:\users\andreas\documents\visual studio 2012\Projects\CyberFarminScada2\CyberFarminScada2\bin\DotNet.Highcharts.pdb
+c:\users\andreas\documents\visual studio 2012\Projects\CyberFarminScada2\CyberFarminScada2\bin\DotNet.Highcharts.xml
+c:\users\andreas\documents\visual studio 2012\Projects\CyberFarminScada2\CyberFarminScada2\bin\RabbitMQ.Client.dll
+c:\users\andreas\documents\visual studio 2012\Projects\CyberFarminScada2\CyberFarminScada2\bin\RabbitMQ.Client.xml

@@ -1,0 +1,5 @@
+C:\Users\andreas\Documents\Visual Studio 2012\Projects\CyberFarminScada2\Tester\bin\Debug\Tester.exe.config
+C:\Users\andreas\Documents\Visual Studio 2012\Projects\CyberFarminScada2\Tester\bin\Debug\Tester.exe
+C:\Users\andreas\Documents\Visual Studio 2012\Projects\CyberFarminScada2\Tester\bin\Debug\Tester.pdb
+C:\Users\andreas\Documents\Visual Studio 2012\Projects\CyberFarminScada2\Tester\obj\Debug\Tester.exe
+C:\Users\andreas\Documents\Visual Studio 2012\Projects\CyberFarminScada2\Tester\obj\Debug\Tester.pdb
