@@ -7,10 +7,15 @@
         Login</h1>
     <p>
         Username:
-        <asp:TextBox ID="UserName" runat="server"></asp:TextBox></p>
+        <asp:TextBox ID="UserNameTextBox" runat="server"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="UserNameTextBox" ErrorMessage="Please enter your username" ForeColor="Red"></asp:RequiredFieldValidator>
+    </p>
+
     <p>
         Password:
-        <asp:TextBox ID="Password" runat="server" TextMode="Password"></asp:TextBox></p>
+        <asp:TextBox ID="PasswordTextBox" runat="server" TextMode="Password"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="PasswordTextBox" ErrorMessage="Please enter your passsword" ForeColor="Red"></asp:RequiredFieldValidator>
+    </p>
     <p>
         <asp:CheckBox ID="RememberMe" runat="server" Text="Remember Me" /> </p>
     <p>
