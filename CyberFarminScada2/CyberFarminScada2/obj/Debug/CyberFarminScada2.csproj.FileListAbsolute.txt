@@ -90,3 +90,5 @@ C:\Users\andreas\Documents\CFScada\CyberFarminScada2\CyberFarminScada2\obj\Debug
 C:\Users\andreas\Documents\CFScada\CyberFarminScada2\CyberFarminScada2\obj\Debug\CyberFarminScada2.dll
 C:\Users\andreas\Documents\CFScada\CyberFarminScada2\CyberFarminScada2\obj\Debug\CyberFarminScada2.pdb
 >>>>>>> 73f52e2ff7503136ba2d96b4ba4f1bb9ad49dc87
+C:\Users\andreas\Documents\CFScada\CyberFarminScada2\CyberFarminScada2\bin\Database.pdb
+C:\Users\andreas\Documents\CFScada\CyberFarminScada2\CyberFarminScada2\bin\MySql.Data.dll
