@@ -201,18 +201,18 @@ footer {
     .ulGrid li {
         display:block;
     }
-.buttonContainer {
+#buttonContainer {
 
     padding: 4px;
 
 }
-    .buttonContainer #listHolder {
-    display:inline-block;
+    #buttonContainer .listHolder ul li{
+    display:inline;
     }
-    .buttonContainer ul {
+    #buttonContainer ul {
         display:inline;
     }
-    .buttonContainer li {
+    #buttonContainer li {
         padding:5px;
         display:block;
     }
