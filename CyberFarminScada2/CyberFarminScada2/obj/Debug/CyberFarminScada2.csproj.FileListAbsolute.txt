@@ -33,7 +33,6 @@ C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin
 C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\Microsoft.WindowsAzure.Configuration.dll
 C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\Microsoft.ServiceBus.xml
 C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\Microsoft.WindowsAzure.Configuration.xml
-<<<<<<< HEAD
 C:\Users\Zaghi\Documents\CFScada\CyberFarminScada2\CyberFarminScada2\bin\CyberFarminScada2.dll.config
 C:\Users\Zaghi\Documents\CFScada\CyberFarminScada2\CyberFarminScada2\bin\CyberFarminScada2.dll
 C:\Users\Zaghi\Documents\CFScada\CyberFarminScada2\CyberFarminScada2\bin\CyberFarminScada2.pdb
@@ -89,6 +88,6 @@ C:\Users\andreas\Documents\CFScada\CyberFarminScada2\CyberFarminScada2\bin\Rabbi
 C:\Users\andreas\Documents\CFScada\CyberFarminScada2\CyberFarminScada2\obj\Debug\CyberFarminScada2.csprojResolveAssemblyReference.cache
 C:\Users\andreas\Documents\CFScada\CyberFarminScada2\CyberFarminScada2\obj\Debug\CyberFarminScada2.dll
 C:\Users\andreas\Documents\CFScada\CyberFarminScada2\CyberFarminScada2\obj\Debug\CyberFarminScada2.pdb
->>>>>>> 73f52e2ff7503136ba2d96b4ba4f1bb9ad49dc87
+
 C:\Users\andreas\Documents\CFScada\CyberFarminScada2\CyberFarminScada2\bin\Database.pdb
 C:\Users\andreas\Documents\CFScada\CyberFarminScada2\CyberFarminScada2\bin\MySql.Data.dll
