@@ -42,7 +42,7 @@
         <li><a href="About.aspx">About CyberFarming</a></li>
      
         <li><a href="Logon.aspx">Log In</a></li>
-        <li><a href="scadaOverview.aspx">SCADA</a></li>
+        <li><a href="ScadaGreenhouses.aspx">SCADA</a></li>
      
     </ul>
  

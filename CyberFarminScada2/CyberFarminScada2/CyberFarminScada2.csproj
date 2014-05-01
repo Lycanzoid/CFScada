@@ -41,11 +41,40 @@
     <Reference Include="DotNet.Highcharts">
       <HintPath>..\..\..\..\CYBERFARMINGUTIL\DotNet.Highcharts.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.0.3\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.SystemWeb.2.0.3\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.0.2\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.0.2\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.0.2\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ServiceBus">
+      <HintPath>..\packages\WindowsAzure.ServiceBus.2.3.1.0\lib\net40-full\Microsoft.ServiceBus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Configuration">
+      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.2.0.3\lib\net40\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
     <Reference Include="RabbitMQ.Client">
       <HintPath>..\..\..\..\CYBERFARMINGUTIL\bin\RabbitMQ.Client.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DataVisualization.Design" />
     <Reference Include="System.Web.DynamicData" />
@@ -128,72 +157,6 @@
     <Content Include="Content\Highcharts-3.0.10\examples\spline-plot-bands\index.htm" />
     <Content Include="Content\Highcharts-3.0.10\examples\spline-symbols\index.htm" />
     <Content Include="Content\Highcharts-3.0.10\examples\waterfall\index.htm" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\pom.xml" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\java\com\highcharts\export\converter\SVGConverter.java" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\java\com\highcharts\export\converter\SVGConverterException.java" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\java\com\highcharts\export\pool\AbstractPool.java" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\java\com\highcharts\export\pool\BlockingQueuePool.java" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\java\com\highcharts\export\pool\ObjectFactory.java" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\java\com\highcharts\export\pool\ObjectPool.java" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\java\com\highcharts\export\pool\PoolException.java" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\java\com\highcharts\export\pool\ServerObjectFactory.java" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\java\com\highcharts\export\server\Server.java" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\java\com\highcharts\export\server\ServerState.java" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\java\com\highcharts\export\server\TimeOut.java" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\java\com\highcharts\export\util\MimeType.java" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\java\com\highcharts\export\util\TempDir.java" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\resources\phantomjs\data.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\resources\phantomjs\highcharts-3d.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\resources\phantomjs\highcharts-convert.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\resources\phantomjs\highcharts-more.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\resources\phantomjs\highcharts.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\resources\phantomjs\jquery.1.9.1.min.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\resources\phantomjs\map.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\resources\spring-convert.xml" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\pom.xml" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\java\com\highcharts\export\controller\ExportController.java" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\java\com\highcharts\export\filter\CorsFilter.java" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\META-INF\context.xml" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\css\demo.css" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\Highcharts-icon-160px.png" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\codemirror.css" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\codemirror.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\mode\javascript\index.html" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\mode\javascript\javascript.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\mode\javascript\typescript.html" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\mode\xml\index.html" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\mode\xml\xml.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\util\closetag.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\util\dialog.css" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\util\dialog.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\util\foldcode.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\util\formatting.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\util\javascript-hint.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\util\loadmode.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\util\match-highlighter.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\util\multiplex.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\util\overlay.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\util\pig-hint.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\util\runmode-standalone.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\util\runmode.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\util\search.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\util\searchcursor.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\util\simple-hint.css" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\util\simple-hint.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\resources\lib\codemirror\util\xml-hint.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\WEB-INF\jspf\callback.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\WEB-INF\jspf\config.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\WEB-INF\spring\export-servlet.xml" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\WEB-INF\spring\spring-context.xml" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\WEB-INF\web.xml" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\pom.xml" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\phantomjs\data.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\phantomjs\highcharts-3d.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\phantomjs\highcharts-convert.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\phantomjs\highcharts-more.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\phantomjs\highcharts.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\phantomjs\jquery.1.9.1.min.js" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\phantomjs\map.js" />
     <Content Include="Content\Highcharts-3.0.10\gfx\vml-radial-gradient.png" />
     <Content Include="Content\Highcharts-3.0.10\graphics\skies.jpg" />
     <Content Include="Content\Highcharts-3.0.10\graphics\snow.png" />
@@ -232,8 +195,22 @@
     <Content Include="Content\Site.css" />
     <Content Include="Home.aspx" />
     <Content Include="Logon.aspx" />
+    <Content Include="ScadaGreenhouses.aspx" />
+    <Content Include="scadaLights.aspx" />
     <Content Include="scadaOverview.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Performance\Microsoft.ServiceBus.MessagingPerformanceCounters.man" />
+    <None Include="Properties\PublishProfiles\Azure.pubxml" />
+    <None Include="Properties\PublishProfiles\folder.pubxml" />
+    <None Include="Properties\PublishProfiles\Somee.pubxml" />
+    <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.4.js" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery.signalR-2.0.3.js" />
+    <Content Include="Scripts\jquery.signalR-2.0.3.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -243,6 +220,7 @@
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
+    <Compile Include="dataHub.cs" />
     <Compile Include="Domain.cs" />
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
@@ -259,6 +237,20 @@
       <DependentUpon>Logon.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScadaGreenhouses.aspx.cs">
+      <DependentUpon>ScadaGreenhouses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScadaGreenhouses.aspx.designer.cs">
+      <DependentUpon>ScadaGreenhouses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scadaLights.aspx.cs">
+      <DependentUpon>scadaLights.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scadaLights.aspx.designer.cs">
+      <DependentUpon>scadaLights.aspx</DependentUpon>
+    </Compile>
     <Compile Include="scadaOverview.aspx.cs">
       <DependentUpon>scadaOverview.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -266,6 +258,7 @@
     <Compile Include="scadaOverview.aspx.designer.cs">
       <DependentUpon>scadaOverview.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Startup.cs" />
     <Compile Include="Template.Master.cs">
       <DependentUpon>Template.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -273,21 +266,11 @@
     <Compile Include="Template.Master.designer.cs">
       <DependentUpon>Template.Master</DependentUpon>
     </Compile>
+    <Compile Include="tempSim.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Template.Master" />
     <Content Include="Content\Highcharts-3.0.10\examples\line-ajax\analytics.tsv" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\resources\app-convert.properties" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\resources\log4j.properties" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\.DS_Store" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\resources\log4j.properties" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\WEB-INF\jspf\lexl.svg" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\WEB-INF\pages\demo.jsp" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\WEB-INF\pages\error.jsp" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\highcharts-export\highcharts-export-web\src\main\webapp\WEB-INF\spring\app-convert.properties" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\java\readme.md" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\phantomjs\readme.md" />
-    <Content Include="Content\Highcharts-3.0.10\exporting-server\php\php-batik\index.php" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

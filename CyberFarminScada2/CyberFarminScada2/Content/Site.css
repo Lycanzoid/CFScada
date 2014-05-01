@@ -193,8 +193,36 @@ footer {
     text-align: center;
     font-size: 14px;
 }
+
+.ulGrid {
+    padding:15px;
+    list-style:none;
+}
+    .ulGrid li {
+        display:block;
+    }
+.buttonContainer {
+
+    padding: 4px;
+
+}
+    .buttonContainer #listHolder {
+    display:inline-block;
+    }
+    .buttonContainer ul {
+        display:inline;
+    }
+    .buttonContainer li {
+        padding:5px;
+        display:block;
+    }
+
 @media only screen and (min-width: 768px) {
- 
+
+    .ulGrid li {
+        display:inline;
+        padding:25px;
+    }
     a.to_nav {
         display: none;
     }

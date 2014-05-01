@@ -8,3 +8,28 @@ c:\users\andreas\documents\visual studio 2012\Projects\CyberFarminScada2\CyberFa
 c:\users\andreas\documents\visual studio 2012\Projects\CyberFarminScada2\CyberFarminScada2\bin\DotNet.Highcharts.xml
 c:\users\andreas\documents\visual studio 2012\Projects\CyberFarminScada2\CyberFarminScada2\bin\RabbitMQ.Client.dll
 c:\users\andreas\documents\visual studio 2012\Projects\CyberFarminScada2\CyberFarminScada2\bin\RabbitMQ.Client.xml
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\CyberFarminScada2.dll
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\CyberFarminScada2.pdb
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\DotNet.Highcharts.pdb
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\DotNet.Highcharts.xml
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\RabbitMQ.Client.xml
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\obj\Debug\CyberFarminScada2.csprojResolveAssemblyReference.cache
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\obj\Debug\CyberFarminScada2.dll
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\obj\Debug\CyberFarminScada2.pdb
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\Microsoft.Owin.dll
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\Microsoft.Owin.Security.dll
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\Newtonsoft.Json.dll
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\Owin.dll
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\Microsoft.Owin.xml
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\Microsoft.Owin.Security.xml
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\Newtonsoft.Json.xml
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\Microsoft.ServiceBus.dll
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\Microsoft.ServiceBus.xml
+C:\Users\Andreas\Documents\Programmering\CyberFarminScada2\CyberFarminScada2\bin\Microsoft.WindowsAzure.Configuration.xml

@@ -20,36 +20,19 @@ namespace CyberFarminScada2.SCADA
 {
     public partial class scadaOverview : System.Web.UI.Page
     {
-               
+
         public static string serverVar { get; set; }
-        public static Queue<int> serverData { get; set;}
-        JavaScriptSerializer jss = new JavaScriptSerializer();
-        
-        loader load = new loader();
-        
+        public static Queue<int> serverData { get; set; }
+
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-            ThreadStart loader = new ThreadStart(load.makeLive);
-            Thread thread = new Thread(loader);
-            if (thread.IsAlive == false)
-            {
-               thread.Start();
-            }
-           
-           
+            tempSim sim = new tempSim();
+            Thread thread = new Thread(new ThreadStart(sim.simulate));
+            thread.Start();
+
         }
 
-        [WebMethod]
-        public static double getData() {
-            return 2.5;
-        }
-        [WebMethod]
-        public static string getTemp()
-        {
-            return serverVar;
-        }
 
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -61,39 +44,12 @@ namespace CyberFarminScada2.SCADA
             SqlCeConnection connection =
             new SqlCeConnection(@"Data Source=|DataDirectory|\Database1.sdf");
             connection.Open();
-            SqlCeCommand command = new SqlCeCommand("SELECT * FROM rabbit",connection);
+            SqlCeCommand command = new SqlCeCommand("SELECT * FROM rabbit", connection);
 
             message = (string)command.ExecuteScalar();
 
-            
-           // receiverLabel.Text = message;
+
+            // receiverLabel.Text = message;
         }
-        class loader 
-        {
-            public void makeLive()
-            {
-                int count = 25;
-                while (true)
-               {
-                    /**
-                    JavaScriptSerializer jss = new JavaScriptSerializer();
-                    string connStr = ConfigurationManager.ConnectionStrings["myConnectionString"].ConnectionString;
-                    
-                    SqlCeConnection connection =
-                    new SqlCeConnection(@"Data Source=|DataDirectory|\Database1.sdf");
-                    connection.Open();
-                    SqlCeCommand command = new SqlCeCommand("SELECT * FROM temperature_readings", connection);
-
-                    serverVar = (string)command.ExecuteScalar();
-                     **/
-
-                   count++;
-                   
-                 
-
-                    Thread.Sleep(1000);
-                }
-            }
-        }
-  }
+    }
 }
