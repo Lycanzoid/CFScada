@@ -19,7 +19,7 @@ namespace CyberFarminScada2
              CloudConfigurationManager.GetSetting("Microsoft.ServiceBus.ConnectionString");
 
             SubscriptionClient Client =
-                        SubscriptionClient.CreateFromConnectionString(connectionString, "tempTopic", "AllMessages");
+                        SubscriptionClient.CreateFromConnectionString(connectionString, "temptopic", "AllMessages");
             
             
             Client.Receive();
@@ -27,7 +27,7 @@ namespace CyberFarminScada2
             
                  while (true)
                  {
-                    BrokeredMessage message = Client.Receive();
+                    BrokeredMessage  message = Client.Receive();
                     var value = Double.Parse(message.GetBody<string>());
 
                      dataHub.ServerTemp(value);
