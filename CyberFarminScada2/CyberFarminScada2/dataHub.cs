@@ -13,18 +13,5 @@ namespace CyberFarminScada2
             IHubContext context = GlobalHost.ConnectionManager.GetHubContext<dataHub>();
             context.Clients.All.broadcastMessage(temp);
         }
-
-        //Broadcasts the BLUE light value to subscribers.
-        internal static void serverLightsBlue(double blue)
-        {
-            IHubContext context = GlobalHost.ConnectionManager.GetHubContext<dataHub>();
-            context.Clients.All.broadcastMessage(blue);
-        }
-        //Broadcasts the RED light value to all subscribers.
-        internal static void serverLightsRed(double blue)
-        {
-            IHubContext context = GlobalHost.ConnectionManager.GetHubContext<dataHub>();
-            context.Clients.All.broadcastMessage(blue);
-        }
     }
 }
