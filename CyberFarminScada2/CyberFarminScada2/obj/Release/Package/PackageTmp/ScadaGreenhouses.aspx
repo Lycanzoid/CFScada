@@ -1,17 +1,39 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ScadaGreenhouses.aspx.cs" Inherits="CyberFarminScada2.ScadaGreenhouses" MasterPageFile="~/Template.Master"  %>
 
 <asp:Content ID="Content1" ContentPlaceHolderId="CPH1" runat="server">
+    <div style="height:400px; width:820px;">
 
-
-    <ul style="padding:4px 4px 4px 4px">
-        <li>
-            <asp:Button ID="Button1" runat="server" Text="Temperature" OnClick="Button1_Click" Height="70px" Width="143px" />
-        </li>
+    </div>
+    <div id="buttonContainer">
+     <ul class="listHolder">
          <li>
-            <asp:Button ID="Button2" runat="server" Text="Lights" Height="70px" Width="143px" OnClick="Button2_Click" />
+             <ul>
+                <li>
+                    <asp:Button ID="tempButton" runat="server" Text="Temperature" OnClick="Button1_Click" Height="70px" Width="143px" />
+                </li>
+                <li>
+                    <asp:Button ID="lightButton" runat="server" Text="Lights" Height="70px" Width="143px" OnClick="Button2_Click" />
+                </li>
+                <li>
+                    <asp:Button ID="Co2Button" runat="server" Text="Co2 Level" Height="70px" Width="143px" OnClick="Button3_Click" />
+                </li>
+            </ul>
+         </li>
+         <li>
+              <ul>
+                <li>
+                    <asp:Button ID="airButton" runat="server" Text="Air Humidity" Height="70px" Width="143px" OnClick="Button3_Click" />
+                </li>
+                <li>
+                    <asp:Button ID="FertButton" runat="server" Text="Fertalizing" Height="70px" Width="143px" OnClick="Button3_Click" />
+                </li>
+                <li>
+                    <asp:Button ID="waterLevel" runat="server" Text="Water Level" Height="70px" Width="143px" OnClick="Button3_Click" />
+                </li>
+            </ul>
         </li>
-        <li>
-            <asp:Button ID="Button3" runat="server" Text="Button" Height="70px" Width="143px" />
-        </li>
-    </ul>
+     </ul>
+    
+   
+</div>
     </asp:Content>

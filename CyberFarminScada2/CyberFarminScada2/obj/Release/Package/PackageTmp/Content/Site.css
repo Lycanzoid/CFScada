@@ -200,7 +200,22 @@ footer {
 }
     .ulGrid li {
         display:block;
-    }      
+    }
+#buttonContainer {
+
+    padding: 4px;
+
+}
+    #buttonContainer .listHolder ul li{
+    display:inline;
+    }
+    #buttonContainer ul {
+        display:inline;
+    }
+    #buttonContainer li {
+        padding:5px;
+        display:block;
+    }
 
 @media only screen and (min-width: 768px) {
 

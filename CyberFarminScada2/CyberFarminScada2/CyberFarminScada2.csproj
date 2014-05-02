@@ -231,7 +231,6 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="dataHub.cs" />
-    <Compile Include="Domain.cs" />
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

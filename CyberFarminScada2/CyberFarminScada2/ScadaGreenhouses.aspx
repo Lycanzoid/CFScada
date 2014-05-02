@@ -1,7 +1,9 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ScadaGreenhouses.aspx.cs" Inherits="CyberFarminScada2.ScadaGreenhouses" MasterPageFile="~/Template.Master"  %>
 
 <asp:Content ID="Content1" ContentPlaceHolderId="CPH1" runat="server">
+    <div style="height:400px; width:820px;">
 
+    </div>
     <div id="buttonContainer">
      <ul class="listHolder">
          <li>

@@ -88,6 +88,5 @@ C:\Users\andreas\Documents\CFScada\CyberFarminScada2\CyberFarminScada2\bin\Rabbi
 C:\Users\andreas\Documents\CFScada\CyberFarminScada2\CyberFarminScada2\obj\Debug\CyberFarminScada2.csprojResolveAssemblyReference.cache
 C:\Users\andreas\Documents\CFScada\CyberFarminScada2\CyberFarminScada2\obj\Debug\CyberFarminScada2.dll
 C:\Users\andreas\Documents\CFScada\CyberFarminScada2\CyberFarminScada2\obj\Debug\CyberFarminScada2.pdb
-
 C:\Users\andreas\Documents\CFScada\CyberFarminScada2\CyberFarminScada2\bin\Database.pdb
 C:\Users\andreas\Documents\CFScada\CyberFarminScada2\CyberFarminScada2\bin\MySql.Data.dll

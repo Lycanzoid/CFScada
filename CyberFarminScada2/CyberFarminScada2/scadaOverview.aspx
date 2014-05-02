@@ -59,7 +59,7 @@
                     }
                 },
                 title: {
-                    text: 'Temperature'
+                    text: 'Temperature (℃)'
                 },
                 xAxis: {
                     type: 'datetime',
