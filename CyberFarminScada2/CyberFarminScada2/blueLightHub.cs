@@ -7,11 +7,11 @@ using Microsoft.AspNet.SignalR;
 
 namespace CyberFarminScada2
 {
-    public class greenLightHub : Hub
+    public class blueLightHub : Hub
     {
         internal static void greenLight(double greenlight_value)
         {
-            IHubContext context = GlobalHost.ConnectionManager.GetHubContext<greenLightHub>();
+            IHubContext context = GlobalHost.ConnectionManager.GetHubContext<blueLightHub>();
             context.Clients.All.broadcastMessage(greenlight_value);
         }
     }

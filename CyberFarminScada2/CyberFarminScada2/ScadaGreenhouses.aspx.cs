@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -11,12 +12,14 @@ namespace CyberFarminScada2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            tempSim sim = new tempSim();
+            Thread thread = new Thread(new ThreadStart(sim.simulate));
+            thread.Start();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("scadaOverview.aspx", true);
+            Response.Redirect("scadaTemperature.aspx", true);
         }
 
         protected void Button2_Click(object sender, EventArgs e)
@@ -31,15 +34,15 @@ namespace CyberFarminScada2
         }
         protected void Button4_Click(object sender, EventArgs e)
         {
-            Response.Redirect("");
+            Response.Redirect("scadaAir.aspx");
         }
         protected void Button5_Click(object sender, EventArgs e)
         {
-            Response.Redirect("");
+            Response.Redirect("scadaFertalizer.aspx");
         }
         protected void Button6_Click(object sender, EventArgs e)
         {
-            Response.Redirect("");
+            Response.Redirect("scadaWaterLevel.aspx");
         }
     }
 }

@@ -204,16 +204,19 @@
     <Content Include="Content\Site.css" />
     <Content Include="Home.aspx" />
     <Content Include="Logon.aspx" />
+    <Content Include="scadaAir.aspx" />
     <Content Include="scadaCo2.aspx" />
+    <Content Include="scadaFertalizer.aspx" />
     <Content Include="ScadaGreenhouses.aspx" />
     <Content Include="scadaLights.aspx" />
-    <Content Include="scadaOverview.aspx" />
+    <Content Include="scadaTemperature.aspx" />
     <Content Include="packages.config" />
     <Content Include="Performance\Microsoft.ServiceBus.MessagingPerformanceCounters.man" />
     <None Include="Properties\PublishProfiles\Azure.pubxml" />
     <None Include="Properties\PublishProfiles\folder.pubxml" />
     <None Include="Properties\PublishProfiles\Somee.pubxml" />
     <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="scadaWaterLevel.aspx" />
     <Content Include="Scripts\jquery-1.6.4.js" />
     <Content Include="Scripts\jquery-1.6.4.min.js" />
     <Content Include="Scripts\jquery.signalR-2.0.3.js" />
@@ -230,8 +233,11 @@
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
+    <Compile Include="airHub.cs" />
+    <Compile Include="co2Hub.cs" />
     <Compile Include="dataHub.cs" />
-    <Compile Include="greenLightHub.cs" />
+    <Compile Include="fertalizerHub.cs" />
+    <Compile Include="blueLightHub.cs" />
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -247,12 +253,27 @@
       <DependentUpon>Logon.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="redLightHub.cs" />
+    <Compile Include="scadaAir.aspx.cs">
+      <DependentUpon>scadaAir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scadaAir.aspx.designer.cs">
+      <DependentUpon>scadaAir.aspx</DependentUpon>
+    </Compile>
     <Compile Include="scadaCo2.aspx.cs">
       <DependentUpon>scadaCo2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="scadaCo2.aspx.designer.cs">
       <DependentUpon>scadaCo2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scadaFertalizer.aspx.cs">
+      <DependentUpon>scadaFertalizer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scadaFertalizer.aspx.designer.cs">
+      <DependentUpon>scadaFertalizer.aspx</DependentUpon>
     </Compile>
     <Compile Include="ScadaGreenhouses.aspx.cs">
       <DependentUpon>ScadaGreenhouses.aspx</DependentUpon>
@@ -268,12 +289,19 @@
     <Compile Include="scadaLights.aspx.designer.cs">
       <DependentUpon>scadaLights.aspx</DependentUpon>
     </Compile>
-    <Compile Include="scadaOverview.aspx.cs">
-      <DependentUpon>scadaOverview.aspx</DependentUpon>
+    <Compile Include="scadaTemperature.aspx.cs">
+      <DependentUpon>scadaTemperature.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="scadaOverview.aspx.designer.cs">
-      <DependentUpon>scadaOverview.aspx</DependentUpon>
+    <Compile Include="scadaTemperature.aspx.designer.cs">
+      <DependentUpon>scadaTemperature.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scadaWaterLevel.aspx.cs">
+      <DependentUpon>scadaWaterLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scadaWaterLevel.aspx.designer.cs">
+      <DependentUpon>scadaWaterLevel.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
     <Compile Include="Template.Master.cs">
@@ -284,6 +312,7 @@
       <DependentUpon>Template.Master</DependentUpon>
     </Compile>
     <Compile Include="tempSim.cs" />
+    <Compile Include="waterHub.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Template.Master" />

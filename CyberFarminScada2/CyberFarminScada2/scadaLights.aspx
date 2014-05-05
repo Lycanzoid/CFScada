@@ -18,7 +18,7 @@
                       useUTC: false
                   }
               });
-              var data = $.connection.greenLightHub;
+              var data = $.connection.blueLightHub;
             
             
               var chart;
@@ -57,7 +57,7 @@
                       }
                   },
                   title: {
-                      text: 'Light Values (%) (green)'
+                      text: 'Light Values (%) (Blue)'
                   },
                   xAxis: {
                       type: 'datetime',
@@ -66,7 +66,7 @@
                   yAxis: {
                     
                       title: {
-                          text: 'Readings'
+                          text: 'Percentage'
                       },
                       plotLines: [{
                           value: 0,
@@ -80,7 +80,8 @@
                       formatter: function () {
                           return '<b>' + this.series.name + '</b><br/>' +
                           Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
-                          Highcharts.numberFormat(this.y, 2);
+                          Highcharts.numberFormat(this.y, 2)+
+                              '%';
                       }
                   },
                   legend: {
@@ -90,9 +91,9 @@
                       enabled: false
                   },
                   series: [{
-                      color: '#009900',
+                      color: '#0000CC',
                       floating: true,
-                      name: 'Green Light (%)',
+                      name: 'Blue Light (%)',
                       data: (function () {
                           // generate an array of random data
                           var data = [],
@@ -125,7 +126,7 @@
                      useUTC: false
                  }
              });
-             var data = $.connection.dataHub;
+             var data = $.connection.redLightHub;
 
              var chart;
              var graphDat;
@@ -141,13 +142,13 @@
                              // set up the updating of the chart each second
                              var series = this.series[0];
 
-                             data.client.broadcastMessage = function (temp) {
+                             data.client.broadcastMessage = function (redLight_value) {
 
 
                                  var x = (new Date()).getTime(), // current time
 
 
-                                     y = parseFloat(temp);
+                                     y = parseFloat(redLight_value);
 
 
 
@@ -172,7 +173,7 @@
                  yAxis: {
 
                      title: {
-                         text: 'Readings'
+                         text: 'Percentage'
                      },
                      plotLines: [{
                          value: 0,
@@ -186,7 +187,7 @@
                      formatter: function () {
                          return '<b>' + this.series.name + '</b><br/>' +
                          Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
-                         Highcharts.numberFormat(this.y, 2);
+                         Highcharts.numberFormat(this.y, 2)+'%';
                      }
                  },
                  legend: {

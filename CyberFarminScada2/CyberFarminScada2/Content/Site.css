@@ -202,9 +202,7 @@ footer {
         display:block;
     }
 #buttonContainer {
-
     padding: 4px;
-
 }
     #buttonContainer .listHolder ul li{
     display:inline;
@@ -217,44 +215,66 @@ footer {
         display:block;
     }
 
+
+
 @media only screen and (min-width: 768px) {
 
     .ulGrid li {
-        display:inline;
-        padding:25px;
+        display: inline;
+        padding: 25px;
     }
+
     a.to_nav {
         display: none;
     }
-     
+
     .wrapper {
         position: relative;
         width: 100%;
         margin: auto;
     }
-     
+
     #primary_nav {
         position: absolute;
         top: 5px;
         right: 10px;
         background: none;
     }
-     
-    #primary_nav li {
-        display: inline;
+
+        #primary_nav li {
+            display: inline;
+        }
+
+            #primary_nav li a {
+                float: left;
+                border: none;
+                padding: 0 10px;
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                border-radius: 2px;
+            }
+
+            #primary_nav li.top {
+                display: none;
+            }
+
+
+    #Scada {
+        list-style: none;
     }
-     
-    #primary_nav li a {
-        float: left;
-        border: none;
-        padding: 0 10px;
-        -webkit-border-radius: 2px;
-        -moz-border-radius: 2px;
-        border-radius: 2px;
-    }
-    #primary_nav li.top {
-    display: none;
-}
+
+        #Scada .ScadaSec {
+            list-style:none;
+        }
+            #Scada .ScadaSec .ScadaThird {
+                list-style:none;
+                
+              
+            }
+                #Scada .ScadaSec .ScadaThird li {
+                      display:inline-block;
+                      
+                }
  
 }
 #middler {

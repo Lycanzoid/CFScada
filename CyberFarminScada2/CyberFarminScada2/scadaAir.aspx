@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="scadaCo2.aspx.cs" Inherits="CyberFarminScada2.scadaCo2" MasterPageFile="~/Template.Master" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="scadaAir.aspx.cs" Inherits="CyberFarminScada2.scadaAir" MasterPageFile="~/Template.Master" %>
 
-<asp:Content runat="server" ContentPlaceHolderID="CPH1">
+<asp:Content ContentPlaceHolderID="CPH1" runat="server">
     <script src="Content/jquery-1.5.1.min.js"></script>
     <script src="Content/Highcharts-3.0.10/js/highcharts.js"></script>  
         <!--Reference the SignalR library. -->
@@ -9,7 +9,8 @@
     <script src="signalr/hubs"></script>
 
     <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto; max-width:820px;">
-  <script type="text/javascript">
+    
+      <script type="text/javascript">
       $(function () {
           $(document).ready(function () {
               Highcharts.setOptions({
@@ -17,7 +18,7 @@
                       useUTC: false
                   }
               });
-              var data = $.connection.co2Hub;
+              var data = $.connection.airHub;
 
 
               var chart;
@@ -34,13 +35,13 @@
                               // set up the updating of the chart each second
                               var series = this.series[0];
 
-                              data.client.broadcastMessage = function (co2) {
+                              data.client.broadcastMessage = function (air_val) {
 
 
                                   var x = (new Date()).getTime(), // current time
 
 
-                                      y = parseFloat(co2);
+                                      y = parseFloat(air_val);
 
 
 
@@ -56,7 +57,7 @@
                       }
                   },
                   title: {
-                      text: 'Co2 Levels (ppm)'
+                      text: 'Air Humidity (%)'
                   },
                   xAxis: {
                       type: 'datetime',
@@ -65,7 +66,7 @@
                   yAxis: {
 
                       title: {
-                          text: 'PPM'
+                          text: ' Air Humidity '
                       },
                       plotLines: [{
                           value: 0,
@@ -79,7 +80,7 @@
                       formatter: function () {
                           return '<b>' + this.series.name + '</b><br/>' +
                           Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
-                          Highcharts.numberFormat(this.y, 2) +' ppm';
+                          Highcharts.numberFormat(this.y, 2) + ' %';
                       }
                   },
                   legend: {
@@ -89,9 +90,9 @@
                       enabled: false
                   },
                   series: [{
-                   
+
                       floating: true,
-                      name: 'Co2 ppm',
+                      name: 'Air Humidity',
                       data: (function () {
                           // generate an array of random data
                           var data = [],
@@ -115,4 +116,5 @@
 
     </div>
 </asp:Content>
+
 
