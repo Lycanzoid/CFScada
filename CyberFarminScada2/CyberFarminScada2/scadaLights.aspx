@@ -57,7 +57,7 @@
                       }
                   },
                   title: {
-                      text: 'Light Values'
+                      text: 'Light Values (%) (green)'
                   },
                   xAxis: {
                       type: 'datetime',
@@ -92,7 +92,7 @@
                   series: [{
                       color: '#009900',
                       floating: true,
-                      name: 'Temperature',
+                      name: 'Green Light (%)',
                       data: (function () {
                           // generate an array of random data
                           var data = [],
@@ -163,7 +163,7 @@
                      }
                  },
                  title: {
-                     text: 'Temperature (℃)'
+                     text: 'Light Values % (red)'
                  },
                  xAxis: {
                      type: 'datetime',
@@ -198,7 +198,7 @@
                  series: [{
                      color: '#CC0000',
                      floating: true,
-                     name: 'Temperature',
+                     name: 'Red Light',
                      data: (function () {
                          // generate an array of random data
                          var data = [],

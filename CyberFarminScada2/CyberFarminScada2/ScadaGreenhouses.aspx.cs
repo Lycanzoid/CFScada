@@ -26,7 +26,20 @@ namespace CyberFarminScada2
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            Response.Redirect("#");
+            Response.Redirect("scadaCo2.aspx");
+
+        }
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("");
+        }
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("");
+        }
+        protected void Button6_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("");
         }
     }
 }

@@ -22,13 +22,13 @@
          <li>
               <ul>
                 <li>
-                    <asp:Button ID="airButton" runat="server" Text="Air Humidity" Height="70px" Width="143px" OnClick="Button3_Click" />
+                    <asp:Button ID="airButton" runat="server" Text="Air Humidity" Height="70px" Width="143px" OnClick="Button4_Click" />
                 </li>
                 <li>
-                    <asp:Button ID="FertButton" runat="server" Text="Fertalizing" Height="70px" Width="143px" OnClick="Button3_Click" />
+                    <asp:Button ID="FertButton" runat="server" Text="Fertalizing" Height="70px" Width="143px" OnClick="Button5_Click" />
                 </li>
                 <li>
-                    <asp:Button ID="waterLevel" runat="server" Text="Water Level" Height="70px" Width="143px" OnClick="Button3_Click" />
+                    <asp:Button ID="waterLevel" runat="server" Text="Water Level" Height="70px" Width="143px" OnClick="Button6_Click" />
                 </li>
             </ul>
         </li>
