@@ -18,7 +18,8 @@
                       useUTC: false
                   }
               });
-              var data = $.connection.dataHub;
+              var data = $.connection.blueLightHub;
+            
             
               var chart;
               var graphDat;
@@ -34,13 +35,13 @@
                               // set up the updating of the chart each second
                               var series = this.series[0];
 
-                              data.client.broadcastMessage = function (temp) {
+                              data.client.broadcastMessage = function (greenlight_value) {
                              
 
                                   var x = (new Date()).getTime(), // current time
 
 
-                                      y = parseFloat(temp);
+                                      y = parseFloat(greenlight_value);
 
 
 
@@ -56,7 +57,7 @@
                       }
                   },
                   title: {
-                      text: 'Temperature (℃)'
+                      text: 'Light Values (%) (Blue)'
                   },
                   xAxis: {
                       type: 'datetime',
@@ -65,7 +66,7 @@
                   yAxis: {
                     
                       title: {
-                          text: 'Readings'
+                          text: 'Percentage'
                       },
                       plotLines: [{
                           value: 0,
@@ -79,7 +80,8 @@
                       formatter: function () {
                           return '<b>' + this.series.name + '</b><br/>' +
                           Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
-                          Highcharts.numberFormat(this.y, 2);
+                          Highcharts.numberFormat(this.y, 2)+
+                              '%';
                       }
                   },
                   legend: {
@@ -89,9 +91,9 @@
                       enabled: false
                   },
                   series: [{
-                      color: '#000080',
+                      color: '#0000CC',
                       floating: true,
-                      name: 'Temperature',
+                      name: 'Blue Light (%)',
                       data: (function () {
                           // generate an array of random data
                           var data = [],
@@ -124,7 +126,7 @@
                      useUTC: false
                  }
              });
-             var data = $.connection.dataHub;
+             var data = $.connection.redLightHub;
 
              var chart;
              var graphDat;
@@ -140,13 +142,13 @@
                              // set up the updating of the chart each second
                              var series = this.series[0];
 
-                             data.client.broadcastMessage = function (temp) {
+                             data.client.broadcastMessage = function (redLight_value) {
 
 
                                  var x = (new Date()).getTime(), // current time
 
 
-                                     y = parseFloat(temp);
+                                     y = parseFloat(redLight_value);
 
 
 
@@ -162,7 +164,7 @@
                      }
                  },
                  title: {
-                     text: 'Temperature (℃)'
+                     text: 'Light Values % (red)'
                  },
                  xAxis: {
                      type: 'datetime',
@@ -171,7 +173,7 @@
                  yAxis: {
 
                      title: {
-                         text: 'Readings'
+                         text: 'Percentage'
                      },
                      plotLines: [{
                          value: 0,
@@ -185,7 +187,7 @@
                      formatter: function () {
                          return '<b>' + this.series.name + '</b><br/>' +
                          Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' +
-                         Highcharts.numberFormat(this.y, 2);
+                         Highcharts.numberFormat(this.y, 2)+'%';
                      }
                  },
                  legend: {
@@ -195,9 +197,9 @@
                      enabled: false
                  },
                  series: [{
-                     color: '#000080',
+                     color: '#CC0000',
                      floating: true,
-                     name: 'Temperature',
+                     name: 'Red Light',
                      data: (function () {
                          // generate an array of random data
                          var data = [],

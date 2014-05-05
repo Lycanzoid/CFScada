@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="scadaOverview.aspx.cs" Inherits="CyberFarminScada2.SCADA.scadaOverview" MasterPageFile="~/Template.Master" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="scadaTemperature.aspx.cs" Inherits="CyberFarminScada2.SCADA.scadaOverview" MasterPageFile="~/Template.Master" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderId="CPH1" runat="server">
     <script src="Content/jquery-1.5.1.min.js"></script>
@@ -44,7 +44,7 @@
 
 
                                     y = parseFloat(temp);
-
+                                $('#textbox1').val(temp);
 
 
                                 series.addPoint([x, y], true, true);
@@ -117,6 +117,11 @@
 	</script>
 
 </div>
-
+<ul>
+    <li>
+        Temperature:
+    </li>
+    <li><input type="text" name="textbox1" id="textbox1" /></li>
+</ul>
 
 </asp:Content>
