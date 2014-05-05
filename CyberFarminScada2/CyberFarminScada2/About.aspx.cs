@@ -13,5 +13,10 @@ namespace CyberFarminScada2
         {
 
         }
+
+        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("aboutcrew.aspx", true);
+        }
     }
 }
