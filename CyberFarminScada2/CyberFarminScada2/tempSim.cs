@@ -31,6 +31,7 @@ namespace CyberFarminScada2
                     var value = Double.Parse(message.GetBody<string>());
 
                      dataHub.ServerTemp(value);
+                     greenLightHub.greenLight(value);
 
 
                      message.Complete();

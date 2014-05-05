@@ -18,7 +18,8 @@
                       useUTC: false
                   }
               });
-              var data = $.connection.dataHub;
+              var data = $.connection.greenLightHub;
+            
             
               var chart;
               var graphDat;
@@ -34,13 +35,13 @@
                               // set up the updating of the chart each second
                               var series = this.series[0];
 
-                              data.client.broadcastMessage = function (temp) {
+                              data.client.broadcastMessage = function (greenlight_value) {
                              
 
                                   var x = (new Date()).getTime(), // current time
 
 
-                                      y = parseFloat(temp);
+                                      y = parseFloat(greenlight_value);
 
 
 
@@ -56,7 +57,7 @@
                       }
                   },
                   title: {
-                      text: 'Temperature (℃)'
+                      text: 'Light Values'
                   },
                   xAxis: {
                       type: 'datetime',
@@ -89,7 +90,7 @@
                       enabled: false
                   },
                   series: [{
-                      color: '#000080',
+                      color: '#009900',
                       floating: true,
                       name: 'Temperature',
                       data: (function () {
@@ -195,7 +196,7 @@
                      enabled: false
                  },
                  series: [{
-                     color: '#000080',
+                     color: '#CC0000',
                      floating: true,
                      name: 'Temperature',
                      data: (function () {
